@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<!--    -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>transitions</title> 
+        <!--  -->
+        <style>
+            .bluebox{
+                background-color: #405E9B;
+                color: white;
+                height: 108px;
+                width: 100px;
+                 /*when we hover over the facebook div, let it change from 100px to 200px, for example. */
+                /*tell browser duration of transition.  */
+                transition: width 1s;
+                
+                    
+            }
+            /*tell browser for the bluebox class, if we hover over any element of that class, we want the width to change to 300px */
+            .bluebox.hover{
+                width: 300px;
+            }
+            
+            .yellowbox{
+                background-color:rgb(222, 224, 85);
+                height: 108px;
+                width: auto;
+            }
+            .greenbox{
+                background-color: #31af37;
+                height: 108px;
+                width: 100px;
+                
+                transition: width 1s, height 1s, transform 1s;
+            }
+            .greenbox:hover{
+                width: 300px;
+                height: 300px;
+                transform: rotateX(180deg);
+            }
+            .great{
+                background-color: #5a3479;
+            }
+        
+        </style>
+        
+    </head>
+    
+    <body>
+        <div class="bluebox">
+            <p>Facebook is <span class="great">great</span></p>
+        
+        </div>
+        <div class="yellowbox">
+            <p>Apple</p>
+        
+        </div>
+        <div class="greenbox">
+            <p>Microsoft</p>
+        
+        </div>
+    
+    </body>
+
+</html>

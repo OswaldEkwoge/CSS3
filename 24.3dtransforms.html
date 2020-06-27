@@ -4,7 +4,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>2D transform</title> 
+        <title>3D transform</title> 
         <!--  -->
         <style>
             .bluebox{
@@ -14,30 +14,14 @@
                 width: 100px;
                 
                 /*transforms */
-                /* transform: rotate(30deg); */
+                /* rotate facebook div in 3D. 90 degrees won't appear because it will be flat. */
+                /*transform: rotateX(40deg);*/
                 
-                /*some browsers might need certain properties. For instance Internet Explorer will need -ms-transform: rotate(30deg), others will need -webkit-transform:  */
+                /*y rotation */
+                transform: rotateY(40deg);
                 
-                /*transform: translate(20px); */
+                /*for Internet Explorer 9, we shall use  -ms-transform, -webkit-transform for other browsers.  */
                 
-                /*if we choose two values for transform, the second value will tell the browser to move the diff down */
-                /*transform: translate(20px 20px); */
-                
-                /*scaling is changing the width and height. A scale of 0.5 is halfing the dimension.  */
-               /* transform: scale(0.5);*/
-                
-                /*two values, one for width and one for height  */
-                /*transform: scale(0.9, 1);*/
-                
-                /*skewing from the x axis  */
-                /*transform: skewX(10deg);*/
-                
-                /*skewing from the y axis  */
-                transform: skewY(10deg);
-                
-                /*skewing from x and y axes  */
-                transform: skew(10deg,10deg);
-                    
                     
             }
             .yellowbox{
