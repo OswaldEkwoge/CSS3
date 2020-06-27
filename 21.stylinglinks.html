@@ -1,52 +1,65 @@
 <!DOCTYPE html>
 
-<!-- floating makes an element to float just like bring forward in microsoft word.   -->
+<!--    -->
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Floating</title> 
-        <!--   -->
+        <title>styling links</title> 
+        
         <style>
+            /*If i want to change the characteristics of all the links in the page.  */
+            a:link{
+                color: #268c20
+            }
+            a:hover{
+                font-size: 3em;
+            }
             .bluebox{
                 background-color: #405E9B;
                 color: white;
                 height: 108px;
                 width: auto;
-                /* apply floating    */
-                float: left;
+            }
+            /*If I want to work on a specific element's link. If we hover, it is 3em, if we click and hold the mouse key, it becomes 4em.  */
+            div.bluebox aactive {
+                font-size: 4em;
             }
             .yellowbox{
                 background-color:rgb(222, 224, 85);
                 height: 108px;
                 width: auto;
-                float: right;
+            }
+            /* When link has already been visited, it changes color.  */
+            div.yellowbox a:visited{
+                color: #e04732
             }
             .greenbox{
                 background-color: #31af37;
                 height: 108px;
                 width: auto;
-                /* If we use clear, microsoft will not allow any floating element on its right or left. it won't sit just after facebook or before Apple. */
-                clear: both;
             }
             .great{
                 background-color: #5a3479;
             }
         
         </style>
-        <!-- Spans are inline elements used to groupd inline elements and style using css. Let's say we want to style only a word in a paragraph. This can be done using span. -->
+        
     </head>
     
     <body>
         <div class="bluebox">
-            <p>Facebook is <span class="great">great</span></p>
+            <p>Facebook. </p>
+            <p><a href="http://amazon.com">Visit link.</a></p>
         
         </div>
         <div class="yellowbox">
             <p>Apple</p>
+            <p><a href="http://ebay.com">Visit link.</a></p>
         
         </div>
         <div class="greenbox">
             <p>Microsoft</p>
+            <p><a href="http://cnn.com">Visit link.</a></p>
         
         </div>
     

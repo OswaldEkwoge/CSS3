@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 
-<!-- floating makes an element to float just like bring forward in microsoft word.   -->
+<!--    -->
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Floating</title> 
-        <!--   -->
+        <title>text font</title> 
+        
         <style>
             .bluebox{
                 background-color: #405E9B;
                 color: white;
                 height: 108px;
                 width: auto;
-                /* apply floating    */
-                float: left;
+                font-size: 100px;
+                font-family: sans-serif;
             }
             .yellowbox{
                 background-color:rgb(222, 224, 85);
                 height: 108px;
                 width: auto;
-                float: right;
+                font-family: serif;
+                font-size: 100px;
             }
             .greenbox{
                 background-color: #31af37;
                 height: 108px;
                 width: auto;
-                /* If we use clear, microsoft will not allow any floating element on its right or left. it won't sit just after facebook or before Apple. */
-                clear: both;
+                font-size: 100px;
+                font-family: "Times New Roman", Times, serif;
+                /*what happens here is that we want Times New Roman, if it doesn't work, then try Times, and if this doesn't work, then try serif.   */
             }
             .great{
                 background-color: #5a3479;
             }
         
         </style>
-        <!-- Spans are inline elements used to groupd inline elements and style using css. Let's say we want to style only a word in a paragraph. This can be done using span. -->
+        
     </head>
     
     <body>
         <div class="bluebox">
-            <p>Facebook is <span class="great">great</span></p>
+            <p>Facebook.</p>
         
         </div>
         <div class="yellowbox">

@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 
-<!-- floating makes an element to float just like bring forward in microsoft word.   -->
+<!-- Let's say we want to hide the facebook div element.but also preseve the space facebook is occupying.   -->
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Floating</title> 
-        <!--   -->
+        <title>display</title> 
+        <!--  -->
         <style>
             .bluebox{
                 background-color: #405E9B;
                 color: white;
                 height: 108px;
                 width: auto;
-                /* apply floating    */
-                float: left;
+                /* visibility hidden will hide facebook.    
+                visibility: hidden; */
+                /* using display:non will hide facebook but also remove the space occupied by it.
+                display: none; */
             }
             .yellowbox{
                 background-color:rgb(222, 224, 85);
                 height: 108px;
                 width: auto;
-                float: right;
             }
             .greenbox{
                 background-color: #31af37;
                 height: 108px;
                 width: auto;
-                /* If we use clear, microsoft will not allow any floating element on its right or left. it won't sit just after facebook or before Apple. */
-                clear: both;
             }
             .great{
                 background-color: #5a3479;
+                display: block;
             }
         
         </style>

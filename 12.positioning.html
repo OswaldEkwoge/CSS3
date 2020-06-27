@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 
-<!-- floating makes an element to float just like bring forward in microsoft word.   -->
+<!-- Positioning means setting a particular position for our elements and how these elemtents will behave. four types: static or fixed (behaving according to the normal flow of the web page). Relative means that an element is placed relative to its original position. Absolute position means positioning the element relative to the first parent that is non-static. If there isn't any non-static element, it will poisition it relative to the html page.the emenent with the greater z-index will show un top of the other elements.     -->
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Floating</title> 
+        <title>positioning</title> 
         <!--   -->
         <style>
             .bluebox{
@@ -12,21 +12,30 @@
                 color: white;
                 height: 108px;
                 width: auto;
-                /* apply floating    */
-                float: left;
+                position: fixed;
+                top: 30px;
+                left: 30px;
+                z-index:2;
+                
             }
             .yellowbox{
                 background-color:rgb(222, 224, 85);
                 height: 108px;
                 width: auto;
-                float: right;
+                position: relative;
+                top: 20px;
+                left: 30px;
+                z-index: 3;
+                
             }
             .greenbox{
                 background-color: #31af37;
                 height: 108px;
                 width: auto;
-                /* If we use clear, microsoft will not allow any floating element on its right or left. it won't sit just after facebook or before Apple. */
-                clear: both;
+                position: absolute;
+                top: 40px;
+                left: 40px;
+                
             }
             .great{
                 background-color: #5a3479;

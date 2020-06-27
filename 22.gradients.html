@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<!--    -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>div and span</title> 
+        
+        <style>
+            .bluebox{
+                /*background-color: #405E9B;*/
+                color: white;
+                height: 108px;
+                width: auto;
+                /* gradient. the following will work well for google chrome, but other browsers need a specific syntax: you need to duplicate the line  */
+                
+                /*background: linear-gradient(blue,white);  */
+                
+                /*
+                 for safari: 
+                background: -webkit-linear-gradient(blue,white);
+                 for opera: 
+                background: -o-linear-gradient(blue,white);
+                 for firefox: 
+                background: -moz-linear-gradient(blue,white);
+                
+                */
+                
+                /* Let's try three colors, rather than two colors as shown above. we can also change the order of the colors: to bottom left, to left, 90deg (rotate anticlockwise by 90 degrees), and many more */
+                
+                /*background: linear-gradient(to left, blue, white, orange); */
+                
+                /*Let's choose colors with opacity   */
+                /*background: linear-gradient(to left, rgba(0,0,255,0.5), rgba(0,0,255,1)); */
+                
+                /*Let's choose colors with opacity.    */
+               /* background: radial-gradient(blue, white,orange); */
+                
+                /* you can also choose how much space each color occupies using a percentage.    */
+               /* background: radial-gradient(blue 5%, white 15%,orange 80%); */
+                
+                /* make the center color take the shape of a circle    */
+                background: radial-gradient(circle, blue 5%, white 15%,orange 80%);
+            }
+            .yellowbox{
+                background-color:rgb(222, 224, 85);
+                height: 108px;
+                width: auto;
+            }
+            .greenbox{
+                background-color: #31af37;
+                height: 108px;
+                width: auto;
+            }
+            .great{
+                background-color: #5a3479;
+            }
+        
+        </style>
+        
+    </head>
+    
+    <body>
+        <div class="bluebox">
+            <p>Facebook</p>
+        
+        </div>
+        <div class="yellowbox">
+            <p>Apple</p>
+        
+        </div>
+        <div class="greenbox">
+            <p>Microsoft</p>
+        
+        </div>
+    
+    </body>
+
+</html>

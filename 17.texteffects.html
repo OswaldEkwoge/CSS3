@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<!--    -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>text effects</title> 
+        <!--  -->
+        <style>
+            .bluebox{
+                background-color: #405E9B;
+                color: white;
+                height: 108px;
+                width: auto;
+                /*The facebook text is overflowing across the border since it is no longer a paragraph. One way to remove this is using overflow set to hidden.    */
+                overflow: hidden;
+                /*text is no longer wrapped.   */
+                /*white-space: nowrap; */
+                /*remove broken words and complete them with ...  You can see more words if you change the width of the window, that is, expand the window.*/
+                text-overflow: ellipsis;
+                /*make overflow visible when we hover over the div we need to create a new bluebox class. In this case, don't use the nowrap property. */
+            }
+            
+            .bluebox:hover{
+                overflow: visible;
+            }
+            
+            .yellowbox{
+                background-color:rgb(222, 224, 85);
+                height: 108px;
+                width: 400px;
+                /*word-break: break-all; break the line even between two letters, to handly long words. Else, use keep-all */
+                word-wrap: break-word;  /*first wrap the word, then prevent overflowing  */
+                overflow: hidden;
+            }
+            .greenbox{
+                background-color: #31af37;
+                height: 108px;
+                width: auto;
+            }
+            .great{
+                background-color: #5a3479;
+            }
+        
+        </style>
+        
+    </head>
+    
+    <body>
+        <div class="bluebox">
+            Facebook Facebook Facebook Facebook Facebook Facebook FacebookFacebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook FacebookFacebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook
+        
+        </div>
+        <div class="yellowbox">
+            <p>Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple LoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooApple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple AppleApple AppleApple AppleApple AppleApple AppleApple Apple LooooooooooooooooooooooooooooongApple</p>
+        
+        </div>
+        <div class="greenbox">
+            <p>Microsoft</p>
+        
+        </div>
+    
+    </body>
+
+</html>
